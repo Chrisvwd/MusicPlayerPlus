@@ -1,0 +1,22 @@
+{
+  "name": "musicplayerplus",
+  "version": "1.0.0",
+  "description": "music player",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chrisvwd/MusicPlayerPlus.git"
+  },
+  "author": "Christian Vollenweider",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chrisvwd/MusicPlayerPlus/issues"
+  },
+  "homepage": "https://github.com/Chrisvwd/MusicPlayerPlus#readme",
+  "dependencies": {
+    "web-audio-api": "^0.2.2"
+  }
+}
