@@ -1,0 +1,220 @@
+body {
+    background: rgb(251,208,63);
+    background: linear-gradient(0deg, rgba(251,208,63,1) 0%, rgba(232,83,251,1) 100%);
+    color: #fff;
+}
+
+#playerOne {
+    width: 40%;
+    float: left;
+    border-style: solid;
+    border-color: rgb(50, 0, 100);
+    border-radius: 15px;
+    background: rgb(63,251,242);
+    background: linear-gradient(90deg, rgba(221,83,251,0.5) 0%, rgba(70,252,240,0.5) 100%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: rgb(255, 199, 179);
+    text-shadow: 2px 2px 2px black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#title1 {
+    display: table; 
+    margin: 2px auto;
+    border-style: solid;
+    border-color: rgb(50, 0, 100);
+    border-radius: 15px;
+}
+
+#cover1 {
+    display: table;
+    margin: 2px auto;
+    border-style: solid;
+    border-color: rgb(50, 0, 100);
+    border-radius: 15px; 
+}
+
+#playController {
+    display: inline-block;
+    margin: 10 auto;
+    background: linear-gradient(90deg, rgb(204, 0, 255,0.5) 0%, rgb(0, 238, 255,0.5) 100%);
+}
+
+#playController:hover {
+    background: linear-gradient(90deg, rgb(204, 0, 255,0.7) 0%, rgb(0, 238, 255,0.7) 100%);
+}
+
+#songProgress1 {
+    display: inline-block; 
+    margin: 5 auto;
+    width: 80%;
+    background: rgba(50, 0, 62, 0.2);
+    border-radius: 15px;
+}
+
+#songProgressPassed1 {
+    width: 99%;
+    background: linear-gradient(90deg, rgb(0, 238, 255,0.5) 0%, rgb(204, 0, 255,0.5) 100%);
+
+}
+
+#songProgressTime1 {
+    display: inline-block; 
+    margin: 0 auto;
+    width: 5px;
+}
+
+#volumeSlider1 {
+    width: 23%;
+    display: inline-block;
+}
+
+#volumeController {
+    -webkit-appearance: slider-vertical;
+    width: 100%;
+    margin: 0 auto;    
+}
+
+#bassSlider1 {
+    width: 23%;
+    display: inline-block; 
+}
+
+#bassController {
+    -webkit-appearance: slider-vertical;
+    width: 100%;
+    margin: 0 auto;    
+    
+}
+
+#midSlider1 {
+    width: 23%;
+    display: inline-block; 
+}
+
+#midController {
+    -webkit-appearance: slider-vertical;
+    width: 100%;
+    margin: 0 auto;    
+    
+}
+
+#trebleSlider1 {
+    width: 23%;
+    display: inline-block; 
+}
+
+#trebleController {
+    -webkit-appearance: slider-vertical;
+    width: 100%;
+    margin: 0 auto;    
+    
+}
+
+#sliderText1 {
+    text-align: center;
+}
+
+#playerTwo {
+    width: 40%;
+    float: right;
+    border-style: solid;
+    border-color: rgb(50, 0, 100);
+    border-radius: 15px;
+    background: rgb(63,251,242);
+    background: linear-gradient(90deg, rgba(70,252,240,0.5) 0%, rgba(221,83,251,0.5) 100%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: rgb(255, 199, 179);
+    text-shadow: 2px 2px 2px black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#title2 {
+    display: table; 
+    margin: 2px auto;
+    border-style: solid;
+    border-color: rgb(50, 0, 100);
+    border-radius: 15px;
+}
+
+#cover2 {
+    display: table;
+    margin: 2px auto;
+    border-style: solid;
+    border-color: rgb(50, 0, 100);
+    border-radius: 15px; 
+}
+
+#playController2 {
+    display: inline-block;
+    margin: 10 auto;
+    background: linear-gradient(90deg, rgb(0, 238, 255,0.5) 0%, rgb(204, 0, 255,0.5) 100%);
+}
+
+#playController2:hover {
+    background: linear-gradient(90deg, rgb(0, 238, 255,0.7) 0%, rgb(204, 0, 255,0.7) 100%);
+}
+
+#songProgress2 {
+    display: inline-block; 
+    margin: 5 auto;
+    width: 80%;
+    background: rgba(50, 0, 62, 0.2);
+    border-radius: 15px;
+}
+
+#songProgressPassed2 {
+    width: 99%;
+    background: linear-gradient(90deg, rgb(0, 238, 255,0.5) 0%, rgb(204, 0, 255,0.5) 100%);
+
+}
+
+#songProgressTime2 {
+    display: inline-block; 
+    margin: 0 auto;
+    width: 5px;
+}
+
+#volumeSlider2 {
+    width: 23%;
+    display: inline-block; 
+}
+
+#volumeController2 {
+    -webkit-appearance: slider-vertical; 
+    width: 100%;
+    margin: 0 auto;    
+}
+
+#bassSlider2 {
+    width: 23%;
+    display: inline-block; 
+}
+
+#bassController2 {
+    -webkit-appearance: slider-vertical;
+    width: 100%;
+    margin: 0 auto;    
+    
+}
+
+#midSlider2 {
+    width: 23%;
+    display: inline-block; 
+}
+
+#midController2 {
+    -webkit-appearance: slider-vertical;
+    width: 100%;
+    margin: 0 auto;    
+    
+}
+#trebleSlider2 {
+    width: 23%;
+    display: inline-block; 
+}
+
+#trebleController2 {
+    -webkit-appearance: slider-vertical;
+    width: 100%;
+    margin: 0 auto;      
+}
