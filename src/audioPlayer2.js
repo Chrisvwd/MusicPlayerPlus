@@ -2,6 +2,7 @@ class AudioPlayer2 {
     constructor(url) {
         this.isReady = false;
         this.isPlaying = false;
+        this.isFirsttime = true;
 
         if(!window.AudioContext) {
             alert("Web Audio API not supported!");
@@ -14,6 +15,21 @@ class AudioPlayer2 {
         this.gainNode = this.audioCtx.createGain();
         this.gainNode.connect(this.audioCtx.destination);
         this.gainNode.gain.value = 1.0;
+
+        this.lowFilter = this.audioCtx.createBiquadFilter();
+        this.lowFilter.type = "lowpass";
+        this.lowFilter.frequency.value = 880;
+        this.lowFilter.Q.value = 0.7;
+
+        this.midFilter = this.audioCtx.createBiquadFilter();
+        this.midFilter.type = "bandpass";
+        this.midFilter.frequency.value = 880;
+        this.midFilter.Q.value = 0;
+
+        this.highFilter = this.audioCtx.createBiquadFilter();
+        this.highFilter.type = "highpass";
+        this.highFilter.frequency.value = 880;
+        this.highFilter.Q.value = 0;
 
         this.request = new XMLHttpRequest();
         this.request.open('GET', url, true);
@@ -49,18 +65,41 @@ class AudioPlayer2 {
             this.bufferSource.buffer = this.buffer;
 
             this.bufferSource.disconnect();
-            this.bufferSource.connect(this.gainNode);
+            this.lowFilter.connect(this.gainNode);
+            this.midFilter.connect(this.lowFilter);
+            this.highFilter.connect(this.midFilter);
+            this.bufferSource.connect(this.highFilter);
             this.bufferSource.start();
-        }
-        else {
+
+        } else if(!this.isFirsttime && this.isPlaying) {
+            this.bufferSource.connect(this.gainNode)
+            document.getElementById("playController2").textContent="Pause";
+            this.bufferSource.resume();
+        } else {
             document.getElementById("playController2").textContent="Play"
             this.bufferSource.stop();
         }
+        
     }
 
     changeVolume(event) {
         if (!this.isReady) return;
         this.gainNode.gain.value = event.target.value;
+    }
+    
+    changeLow(event) {
+        if (!this.isReady) return;
+        this.lowFilter.frequency.value = event.target.value;
+    }
+
+    changeMid(event) {
+        if (!this.isReady) return;
+        this.midFilter.frequency.value = event.target.value;
+    }
+
+    changeHigh(event) {
+        if (!this.isReady) return;
+        this.highFilter.frequency.value = event.target.value;
     }
 }
 

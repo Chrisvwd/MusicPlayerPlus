@@ -18,6 +18,7 @@ body {
     font-family:Arial, Helvetica, sans-serif;
 }
 
+
 #title1 {
     display: table; 
     margin: 2px auto;
@@ -34,6 +35,37 @@ body {
     border-radius: 15px; 
 }
 
+#songUpload1 {
+    display: table;
+    margin: 2 px auto;
+
+}
+
+
+#audioController1{
+    display: table;
+    margin: 2px auto;
+    width: 90%;
+    text-shadow: none;
+    
+}
+
+#audioController1::-webkit-media-controls-mute-button{
+    display: none;
+}
+
+#audioController1::-webkit-media-controls-volume-slider{
+    display: none;
+}
+
+#audioController1::-webkit-media-controls-volume-control-container.closed{
+    display: none;
+}
+
+#audioController1::-webkit-media-controls-volume-control-container{
+    display: none;
+}
+
 #playController {
     display: inline-block;
     margin: 10 auto;
@@ -44,6 +76,7 @@ body {
     background: linear-gradient(90deg, rgb(204, 0, 255,0.7) 0%, rgb(0, 238, 255,0.7) 100%);
 }
 
+/* delete / replacecd with audioController1 */
 #songProgress1 {
     display: inline-block; 
     margin: 5 auto;
