@@ -1,17 +1,52 @@
+/* Background style */
+
 body {
     background: rgb(251,208,63);
     background: linear-gradient(0deg, rgba(251,208,63,1) 0%, rgba(232,83,251,1) 100%);
     color: #fff;
 }
 
+/* Start CSS / style for midInfo */
+
+#midInfo{
+    display: inline-table; 
+    margin: 1.5%;
+    color: rgb(255, 199, 179);
+    text-shadow: 2px 2px 2px black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#helpBtn {
+    display: table;
+    margin: auto;
+    margin-top: -7%;
+    background: rgba(255, 199, 179, 0.5);
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(255, 199, 179, 0.9);
+    border-radius: 10px;
+}
+
+#helpBtn:hover {
+    background: rgba(255, 199, 179, 0.9);
+}
+
+#helpImg{
+    display:none;
+}
+
+/* End CSS / style for midInfo*/
+
+/* Start CSS / style for playerOne */
+
 #playerOne {
     width: 40%;
     float: left;
-    border-style: solid;
-    border-color: rgb(50, 0, 100);
+    border-style: solid hidden;
+    border-width: 5px;
+    border-color: rgb(116, 232, 242);
     border-radius: 15px;
-    background: rgb(63,251,242);
-    background: linear-gradient(90deg, rgba(221,83,251,0.5) 0%, rgba(70,252,240,0.5) 100%);
+    background: linear-gradient(90deg, rgba(241, 128, 242, 0.5) 0%, rgba(116, 232, 242, 0.5) 100%);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     color: rgb(255, 199, 179);
     text-shadow: 2px 2px 2px black;
@@ -22,110 +57,94 @@ body {
 #title1 {
     display: table; 
     margin: 2px auto;
-    border-style: solid;
-    border-color: rgb(50, 0, 100);
+    border-style: solid hidden;
+    border-width: 3px;
+    border-color: rgba(116, 232, 242, 0.9);
     border-radius: 15px;
 }
 
 #cover1 {
     display: table;
     margin: 2px auto;
+    border-style: hidden solid;
+    border-width: 4px;
+    border-color: rgba(116, 232, 242, 0.9);
+    border-radius: 100px; 
+}
+
+#playController1 {
+    display: table;
+    margin: 10px auto;
+    background: rgba(116, 232, 242, 0.5);
+    border-width: 4px;
     border-style: solid;
-    border-color: rgb(50, 0, 100);
-    border-radius: 15px; 
+    border-color: rgba(116, 232, 242, 0.9);
+    border-radius: 10px; 
 }
 
-#songUpload1 {
-    display: table;
-    margin: 2 px auto;
-
+#playController1:hover {
+    background: rgba(116, 232, 242, 0.7);
 }
 
-
-#audioController1{
-    display: table;
-    margin: 2px auto;
-    width: 90%;
-    text-shadow: none;
-    
-}
-
-#audioController1::-webkit-media-controls-mute-button{
-    display: none;
-}
-
-#audioController1::-webkit-media-controls-volume-slider{
-    display: none;
-}
-
-#audioController1::-webkit-media-controls-volume-control-container.closed{
-    display: none;
-}
-
-#audioController1::-webkit-media-controls-volume-control-container{
-    display: none;
-}
-
-#playController {
-    display: inline-block;
-    margin: 10 auto;
-    background: linear-gradient(90deg, rgb(204, 0, 255,0.5) 0%, rgb(0, 238, 255,0.5) 100%);
-}
-
-#playController:hover {
-    background: linear-gradient(90deg, rgb(204, 0, 255,0.7) 0%, rgb(0, 238, 255,0.7) 100%);
-}
-
-/* delete / replacecd with audioController1 */
+/* not working */
 #songProgress1 {
-    display: inline-block; 
+    display: table; 
     margin: 5 auto;
-    width: 80%;
+    width: 87%;
     background: rgba(50, 0, 62, 0.2);
     border-radius: 15px;
 }
 
+/* not working */
 #songProgressPassed1 {
     width: 99%;
     background: linear-gradient(90deg, rgb(0, 238, 255,0.5) 0%, rgb(204, 0, 255,0.5) 100%);
 
 }
 
+/* not working */
 #songProgressTime1 {
-    display: inline-block; 
-    margin: 0 auto;
-    width: 5px;
+    display: table; 
+    margin: auto;
+}
+
+#allSliderBG1 {
+    display: table;
+    margin: 2px auto;
+    border-style: hidden solid;
+    border-width: 3px;
+    border-color: rgba(116, 232, 242, 0.9);
+    border-radius: 15px;
 }
 
 #volumeSlider1 {
-    width: 23%;
+    width: 25%;
     display: inline-block;
 }
 
-#volumeController {
+#volumeController1 {
     -webkit-appearance: slider-vertical;
     width: 100%;
-    margin: 0 auto;    
+    margin: 0 auto;
 }
 
 #bassSlider1 {
-    width: 23%;
+    width: 25%;
     display: inline-block; 
 }
 
-#bassController {
+#bassController1 {
     -webkit-appearance: slider-vertical;
     width: 100%;
-    margin: 0 auto;    
-    
+    margin: 0 auto;       
 }
 
 #midSlider1 {
-    width: 23%;
+    width: 25%;
     display: inline-block; 
 }
 
-#midController {
+#midController1 {
     -webkit-appearance: slider-vertical;
     width: 100%;
     margin: 0 auto;    
@@ -133,11 +152,11 @@ body {
 }
 
 #trebleSlider1 {
-    width: 23%;
+    width: 25%;
     display: inline-block; 
 }
 
-#trebleController {
+#trebleController1 {
     -webkit-appearance: slider-vertical;
     width: 100%;
     margin: 0 auto;    
@@ -148,78 +167,110 @@ body {
     text-align: center;
 }
 
+#visualizer1 {
+    display: table;
+    margin: 2px auto;
+    border-style: solid hidden;
+    border-width: 3px;
+    border-color: rgba(116, 232, 242, 0.9);
+    border-radius: 15px;
+}
+
+/* End CSS / style for PlayerOne */
+
+/* Start CSS / style for PlayerTwo */
+
 #playerTwo {
     width: 40%;
     float: right;
-    border-style: solid;
-    border-color: rgb(50, 0, 100);
+    border-style: solid hidden;
+    border-width: 5px;
+    border-color: rgb(251, 0, 255);
     border-radius: 15px;
-    background: rgb(63,251,242);
-    background: linear-gradient(90deg, rgba(70,252,240,0.5) 0%, rgba(221,83,251,0.5) 100%);
+    background: linear-gradient(90deg, rgba(116, 232, 242, 0.5) 0%, rgba(241, 128, 242, 0.5) 100%);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     color: rgb(255, 199, 179);
     text-shadow: 2px 2px 2px black;
     font-family:Arial, Helvetica, sans-serif;
 }
+
 #title2 {
     display: table; 
     margin: 2px auto;
-    border-style: solid;
-    border-color: rgb(50, 0, 100);
+    border-style: solid hidden;
+    border-width: 3px;
+    border-color: rgba(251, 0, 255, 0.9);
     border-radius: 15px;
 }
 
 #cover2 {
     display: table;
     margin: 2px auto;
-    border-style: solid;
-    border-color: rgb(50, 0, 100);
-    border-radius: 15px; 
+    border-style: hidden solid;
+    border-width: 4px;
+    border-color: rgba(251, 0, 255, 0.9);
+    border-radius: 100px; 
 }
 
 #playController2 {
-    display: inline-block;
-    margin: 10 auto;
-    background: linear-gradient(90deg, rgb(0, 238, 255,0.5) 0%, rgb(204, 0, 255,0.5) 100%);
+    display: table;
+    margin: 10px auto;
+    background: rgba(251, 0, 255, 0.5);
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(251, 0, 255, 0.9);
+    border-radius: 10px; 
 }
 
 #playController2:hover {
-    background: linear-gradient(90deg, rgb(0, 238, 255,0.7) 0%, rgb(204, 0, 255,0.7) 100%);
+    background: rgba(251, 0, 255, 0.7);
 }
 
+/* not working */
 #songProgress2 {
-    display: inline-block; 
+    display: table; 
     margin: 5 auto;
-    width: 80%;
+    width: 87%;
     background: rgba(50, 0, 62, 0.2);
     border-radius: 15px;
 }
 
+/* not working */
 #songProgressPassed2 {
     width: 99%;
     background: linear-gradient(90deg, rgb(0, 238, 255,0.5) 0%, rgb(204, 0, 255,0.5) 100%);
 
 }
 
+/* not working */
 #songProgressTime2 {
-    display: inline-block; 
-    margin: 0 auto;
-    width: 5px;
+    display: table; 
+    margin: auto;
+}
+
+#allSliderBG2 {
+    display: table;
+    margin: 2px auto;
+    border-style: hidden solid;
+    border-width: 3px;
+    border-color: rgba(251, 0, 255);
+    border-radius: 15px;
 }
 
 #volumeSlider2 {
-    width: 23%;
+    width: 25%;
     display: inline-block; 
+    
 }
 
 #volumeController2 {
     -webkit-appearance: slider-vertical; 
     width: 100%;
-    margin: 0 auto;    
+    margin: 0 auto;
 }
 
 #bassSlider2 {
-    width: 23%;
+    width: 25%;
     display: inline-block; 
 }
 
@@ -231,7 +282,7 @@ body {
 }
 
 #midSlider2 {
-    width: 23%;
+    width: 25%;
     display: inline-block; 
 }
 
@@ -242,7 +293,7 @@ body {
     
 }
 #trebleSlider2 {
-    width: 23%;
+    width: 25%;
     display: inline-block; 
 }
 
@@ -251,3 +302,14 @@ body {
     width: 100%;
     margin: 0 auto;      
 }
+
+#visualizer2 {
+    display: table; 
+    margin: 2px auto;
+    border-style: solid hidden;
+    border-width: 3px;
+    border-color: rgba(251, 0, 255, 0.9);
+    border-radius: 15px;
+}
+
+/* End CSS / style for PlayerTwo */

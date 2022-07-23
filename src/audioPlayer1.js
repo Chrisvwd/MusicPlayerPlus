@@ -1,4 +1,4 @@
-class AudioPlayer {
+class AudioPlayer1 {
     constructor(url) {
         this.isReady = false;
         this.isPlaying = false;
@@ -19,17 +19,17 @@ class AudioPlayer {
         this.lowFilter = this.audioCtx.createBiquadFilter();
         this.lowFilter.type = "lowpass";
         this.lowFilter.frequency.value = 880;
-        this.lowFilter.Q.value = 0.7;
+        this.lowFilter.Q.value = 0;
 
         this.midFilter = this.audioCtx.createBiquadFilter();
         this.midFilter.type = "bandpass";
-        this.midFilter.frequency.value = 880;
-        this.midFilter.Q.value = 0;
+        this.midFilter.frequency.value = 1500;
+        this.midFilter.Q.value = 2;
 
         this.highFilter = this.audioCtx.createBiquadFilter();
         this.highFilter.type = "highpass";
         this.highFilter.frequency.value = 880;
-        this.highFilter.Q.value = 0;
+        this.highFilter.Q.value = 1;
 
         this.request = new XMLHttpRequest();
         this.request.open('GET', url, true);
@@ -60,7 +60,7 @@ class AudioPlayer {
 
         if(this.isPlaying) {
             this.isFirsttime = false;
-            document.getElementById("playController").textContent="Pause";
+            document.getElementById("playController1").textContent="Pause";
             this.bufferSource = this.audioCtx.createBufferSource();
             this.bufferSource.buffer = this.buffer;
 
@@ -73,10 +73,10 @@ class AudioPlayer {
 
         } else if(!this.isFirsttime && this.isPlaying) {
             this.bufferSource.connect(this.gainNode)
-            document.getElementById("playController").textContent="Pause";
+            document.getElementById("playController1").textContent="Pause";
             this.bufferSource.resume();
         } else {
-            document.getElementById("playController").textContent="Play"
+            document.getElementById("playController1").textContent="Play"
             this.bufferSource.stop();
         }
         
@@ -103,4 +103,4 @@ class AudioPlayer {
     }
 }
 
-export default AudioPlayer;
+export default AudioPlayer1;
