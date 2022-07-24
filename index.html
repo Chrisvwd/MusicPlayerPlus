@@ -4,66 +4,120 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- start of midInfo  -->
+    <!-- includes App Title and "Help" Button which shows a tutorial on click  -->
     <div id="midInfo">
         <h1>MusicPlayerPlus</h1>
-        <button id="helpBtn" type="button" onclick="showHelp()">Help</button>
+        <button id="helpBtn" type="button">Help</button>
+        <div id="popup" class="popup">
+            <input id="closeBtn" type="image" src="/img/closebtn2.png"></input>
+            <img src="/img/MusicPlayerPlus_Help.png"></img>
+        </div>
     </div>
-    <img id="helpImg" src="/img/placeholder.png"></img>
+    <!-- end of midInfo  -->
 
+    <!-- start of playerOne  -->
     <div id="playerOne">
         
+        <!-- shows the current title -->
         <h1 id="title1">--SongName--</h1>
         
+        <!-- shows the cover of the current song playing (not working "/img/picdisc.png" is just a template) -->
         <img id="cover1" src="/img/pic1disc.png">
-    
-        <button id="playController1" type="button">Play</button>
         
+        <!-- button to start and stop the song -->
+        <button id="playController1" type="button">Play</button>
+
+        <!-- buttons to change which song will be played -->
+        <div id="songButtons1">
+            <button id="song1_1">Song1</button>
+            <button id="song2_1">Song2</button>
+            <button id="song3_1">Song3</button>
+            <button id="song4_1">Song4</button>
+        </div>
+        
+        <!-- buttons to change the speed of the current song (not working) -->
+        <div id="playSpeedButtons1">
+            <button id="playSpeed_x0_5_1" type="button">x0.5</button>
+            <button id="playSpeed_x1_0_1" type="button">x1.0</button>
+            <button id="playSpeed_x1_5_1" type="button">x1.5</button>
+            <button id="playSpeed_x2_0_1" type="button">x2.0</button>
+        </div>
+        
+        <!-- Shows the progression of the song (not working) -->
         <div id="songProgress1">
             <input id="songProgressPassed1" type="range" value="0" min="0" max="100" step="1">
         </div>
-        
+
         <h4 id="songProgressTime1">00:00</h4>
         
         <script type="module" src="./src/index.js"></script>
         
+        <!-- div for volume, bass, mid and treble slider -->
         <div id="allSliderBG1" >
+            
+            <!-- slider to control the volume of the current song -->
             <div id="volumeSlider1">
-                <input id="volumeController1" type="range" min="0" max="1" step="0.01" value="1.0" />
-                <h4 id="sliderText1">Volume</h4>
+                <input id="volumeController1" type="range" min="0" max="3" step="0.01" value="0.5" />
+                <h4 class="sliderText1">Volume</h4>
             </div>
-
+        
+            <!-- slider to control the bass of the current song -->
             <div id="bassSlider1">
-                <input id="bassController1" type="range" min="100" max="1600" step="10" value="880" />
-                <h4 id="sliderText1">Bass</h4>
+                <input id="bassController1" type="range" min="200" max="1600" step="10" value="880" />
+                <h4 class="sliderText1">Bass</h4>
             </div>
-
+            
+            <!-- slider to control the mid value of the current song -->
             <div id="midSlider1">
                 <input id="midController1" type="range" min="400" max="4000" step="20" value="880" />
-                <h4 id="sliderText1">Mid</h4>
+                <h4 class="sliderText1">Mid</h4>
             </div>
-
+            
+            <!-- slider to control the treble of the current song -->
             <div id="trebleSlider1">
                 <input id="trebleController1" type="range" min="800" max="6000" step="10" value="880" />
-                <h4 id="sliderText1">Treble</h4>
+                <h4 class="sliderText1">Treble</h4>
             </div>
 
         </div>
 
-        <div id="visualizer1">
-            <img src="/img/placeholder.png" style="   width: 200px;height: 200px;">
-            
-        </div>
+        <!-- canvas for the first visualizer -->
+        <canvas id="visualizer1">
+            <!-- empty since the visualizer was not working -->
+        </canvas>
     </div>
 
-    
+    <!-- start of playerTwo -->
     <div id="playerTwo">
 
+        <!-- shows the current title -->
         <h1 id="title2">--SongName--</h1>
         
+        <!-- shows the cover of the current song playing (not working "/img/picdisc.png" is just a template) -->
         <img id="cover2" src="/img/pic1disc.png">
         
+        <!-- button to start and stop the song -->
         <button id="playController2" type="button">Play</button>
+
+        <!-- buttons to change which song will be played -->
+        <div id="songButtons2">
+            <button id="song1_2">Song1</button>
+            <button id="song2_2">Song2</button>
+            <button id="song3_2">Song3</button>
+            <button id="song4_2">Song4</button>
+        </div>
         
+        <!-- buttons to change the speed of the current song (not working) -->
+        <div id="playSpeedButtons2">
+            <button id="playSpeed_x0_5_2" type="button">x0.5</button>
+            <button id="playSpeed_x1_0_2" type="button">x1.0</button>
+            <button id="playSpeed_x1_5_2" type="button">x1.5</button>
+            <button id="playSpeed_x2_0_2" type="button">x2.0</button>
+        </div>
+
+        <!-- Shows the progression of the song (not working) -->
         <div id="songProgress2">
             <input id="songProgressPassed2" type="range" value="0" min="0" max="100" step="1">
         </div>
@@ -72,33 +126,38 @@
         
         <script type="module" src="./src/index.js"></script>
         
+        <!-- div for volume, bass, mid and treble slider -->
         <div id="allSliderBG2" >
 
+            <!-- slider to control the volume of the current song -->
             <div id="volumeSlider2">
-                <input id="volumeController2" type="range" min="0" max="1" step="0.01" value="1.0"/>
-                <h4 id="sliderText1">Volume</h4>
+                <input id="volumeController2" type="range" min="0" max="3" step="0.01" value="0.5"/>
+                <h4 class="sliderText1">Volume</h4>
             </div>
             
+            <!-- slider to control the bass of the current song -->
             <div id="bassSlider2">
-                <input id="bassController2" type="range" min="100" max="1600" step="10" value="880" />
-                <h4 id="sliderText1">Bass</h4>
+                <input id="bassController2" type="range" min="200" max="1600" step="10" value="880" />
+                <h4 class="sliderText1">Bass</h4>
             </div>
             
+            <!-- slider to control the mid value of the current song -->
             <div id="midSlider2">
                 <input id="midController2" type="range" min="400" max="4000" step="20" value="880" />
-                <h4 id="sliderText1">Mid</h4>
+                <h4 class="sliderText1">Mid</h4>
             </div>
             
+            <!-- slider to control the treble of the current song -->
             <div id="trebleSlider2">
                 <input id="trebleController2" type="range" min="800" max="6000" step="10" value="880" />
-                <h4 id="sliderText1">Treble</h4>
+                <h4 class="sliderText1">Treble</h4>
             </div>
         </div>
         
-        <div id="visualizer2">
-            <img src="/img/placeholder.png" style="   width: 200px;height: 200px;">
-            
-        </div>
+          <!-- canvas for the second visualizer -->
+          <canvas id="visualizer2">
+            <!-- empty since the visualizer was not working -->
+        </canvas>
 
     </div>
 </body>

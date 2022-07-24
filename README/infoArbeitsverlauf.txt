@@ -1,0 +1,83 @@
+MusicPlayerPlus
+Author: Christian Vollenweider
+MM Audio- und Videotechnik SoSe 2022
+
+-   -   -
+
+// Einige Worte zum Alten Projekt simple-dj
+
+Erste Gruppe wurde am 06.04.2022 erstellt.
+Die Gruppe bestand aus insgesamt 4 Mitgliedern und die Idee war es einen Audio Player mit extra Funktionen zu entwickeln.
+Jedoch gab es einige Probleme in der Gruppe, weshalb sie am 25.05.2022 aufgelöst worden ist.
+Grund dafür waren (meiner meinung nach), keine Einhaltung von Deadlines, Mangel an Kommunikation, zu optimistische Zielsetzung,
+wenig bis kein Fortschritt.
+Meine Probleme waren dabei unter anderem, dass ich die Erwartungen nicht erfüllen konnte, da es mir an know how gefehlt hat.
+Ich hatte bis zu diesem Kurs keine erfahrung mit web development, was alleine schon eine grosse herausforderung mit sich brachte, dazu kam
+jedoch auch dass in diesem Projekt nicht mit einfachem html, css und javascript gearbeitet worden ist, sonder dazu noch einige andere 
+Frameworks eingesetzt worden sind, welche die arbeite eigentlich vereinfachen sollten, mit denen ich jedoch nichts anfangen konnte, da ich
+zu dem zeitpunkt nicht einmal die basics drauf hatte. 
+(Meine Probleme waren hier unter anderem das verwenden von Typescript anstelle von javascript und der einsatz von React und Tailwind)
+
+Meiner Meinung nach ist dieses Projekt gescheitert, da eine Person gute vorkenntnisse hatte, während die restlichen 3 Mitglieder (inklusive Mir)
+so gut wie keine erfahrung mit sich brachten.
+ 
+-   -   -
+
+// Beginn neues Projekt MusicPlayerPlus
+
+Seit 30.05 neues Projekt erstellt, da sich die Gruppe aufgelöst hat.
+Eine Person wollte lieber alleine weiter arbeiten und die anderen 2 Mitglieder haben den Kurs darauf hin verlassen.
+Ich wollte jedoch trotzdem probieren mit wenig vorkenntnissen ein eigenes Projekt zu erstellen, was sich als sehr schwierig herausgestellt hat.
+Da ich lieber mit javascript, html und css arbeiten wollte, konnte ich nichts aus dem alten Projekt übernehmen 
+(unter anderem auch weil die andere Person innerhalb weniger Stunden das alte Github Repo gelöscht hat), was bedeutet, dass ich
+nur noch etwas mehr als einen Monat Zeit hatte, um ein neues Projekt zu erstellen, für welches ich mich erst einmal in html css und javascript 
+so wie die Web Audio API einarbeiten musste, was auch eine grosse herausforderung mit sich brachte.
+
+Mein Ziel war es nun zumindest die Mindestanforderungen, welche für das Projekt vorgesehen worden sind zu erfüllen.
+1. Zeitgleiches abspielen von mindestens 2 Audiotracks
+2. Separate Kontrolle der Medien 
+3. UI/UX
+darauf hin wollte ich noch 
+4. Einen Mehr-Band-Equalizer einbringen
+und 
+5. eine Visualisierungen der Audiosignale einbringen
+
+Diese Ziele schienen mir zu dem Zeitpunkt als realistisch und ich begann damit, ein Mockup in Photoshop zu erstellen, 
+welches als grundgerüst funktionieren sollte. ("README\MusicPlayerPlus_proto1.png")
+Darauf hin begann ich damit ein Github Repo einzurichten und darauf hin mit dem umsetzen der Anforderungen zu beginnen.
+Ich habe damit angefangen, 2 Separate Audio Player zu erstellen, was sich als nicht zu schwierig dargestellt hat und kurze Zeit später, war das
+Zeitgleiche abspielen mit separater kontrolle über die Lautstärke und das separate Abspielen und Stoppen umgesetzt.
+Darauf hin fing ich an mich um das User Interface und um die User Experience zu kümmern. Bei der einarbeitung gab es einige Probleme, 
+jedoch ging es trotzdem recht schnell voran. Zwar konnte ich nicht alles so aussehen lassen, wie im ersten mockup, aber fuer den anfang war 
+es ausreichend. 
+
+Damit waren die Mindestanforderungen erfüllt und ich begann damit den Mehr-Band-Equalizer zu programmieren, was sich als schwieriger als erwartet
+dargestellt hat. Probleme waren hier, dass ich anders als in der Programmieraufgabe 2 vorgehen wollte, ich es aber nicht zum laufen bringen konnte 
+und da die Deadline immer näher kam, entschloss ich mich dazu meinen Versuch eines Mehr-Band-Equalizer aus der Programmieraufgabe 2 in mein neues
+Projekt zu übernehmen und etwas anzupassen. 
+Dies brachte jedoch einige Probleme mit sich, welche ich erst beim weiteren arbeiten am Projekt herausgefunden habe.
+
+Darauf hin habe ich ein zweites Mockup erstellen, auf basis meines aktuellen stands. ("README\MusicPlayerPlus_proto2.png")
+Geplant waren nun noch:
+1. Verbesserung des/der UI/UX
+2. eine Visualisierungen der Audiosignale
+3. Presets für den Equalizer 
+4. die Abspielgeschwindigkeit zu verändern
+5. ein Hilfe Button einfügen
+
+Da nicht mehr viel Zeit blieb, fing ich schon mal an den Code etwas einheitlicher zu gestalten, und das UI und die UX etwas zu verbessern und 
+habe angefangen an der Visualisierungen der Audiosignale zu arbeiten, was sich als sehr schwierig erwiesen hat.
+Zu beginn wollte ich mit hilfe von Tutorials die Visualisierungen selbst umsetzen, jedoch hat dies so gut wie gar nicht funktioniert, worauf hin
+ich den Visualizer aus der Übungsaufgabe 7 als basis nehmen wollte und auf mein Projekt anpassen wollte, womit ich leider gescheitert bin, 
+da das Abspielen der Audio in meinem Projekt anders funktioniert und ich nicht herausfinden konnte wie ich mein Audiosignale mit dem des Visualizers 
+verbinde. Ich habe versucht die fehler zu beheben aber sobald ein fehler behoben worden ist, erschien ein anderer, woraufhin ich mich dazu entscheiden 
+musste die idee der Visualisierung der Audiosignale aufzugeben.
+
+Mit sehr viel Zeitdruck habe ich in den letzen zwei Tagen vor der Deadline zumindest noch den Hilfe Button einfügen können, 
+und eine Songauswahl mit welcher zwischen 4 voreingestellten Songs gewechselt werden kann.
+Leider hat die Zeit für die Presets und für das verändern der Abspielgeschwindigkeit nicht mehr gereicht.
+
+
+Abschliesend kann ich sagen, dass diese Projekt zwar spaß gemacht hat, es aber sehr anstrengend und schwierig war.
+Es war keine gute Idee alleine, ohne Vorkenntnisse und mit gerade mal der hälfter der Zeit, 
+ein neues Projekt zu starten, aber ich bin trotzdem froh dass ich es versucht habe.

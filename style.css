@@ -9,6 +9,9 @@ body {
 /* Start CSS / style for midInfo */
 
 #midInfo{
+    position: absolute;
+    left: 40%;
+    top: 2%;
     display: inline-table; 
     margin: 1.5%;
     color: rgb(255, 199, 179);
@@ -17,9 +20,9 @@ body {
 }
 
 #helpBtn {
+    position: absolute;
+    left: 13%;
     display: table;
-    margin: auto;
-    margin-top: -7%;
     background: rgba(255, 199, 179, 0.5);
     border-width: 4px;
     border-style: solid;
@@ -35,13 +38,51 @@ body {
     display:none;
 }
 
+.popup {
+    width: 100%;
+    border-radius: 6px;
+    position: relative;
+    margin-top: -70%;
+    right: 90%;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    transform: translate(50%, 50%) scale(1);
+    z-index: 999999 !important;
+}
+
+.popup input {
+    position: absolute;
+    width: 6%;
+    height: auto;
+    right: -9%;
+    padding: 10px;
+    border: 0;
+    outline: none;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.popup img {
+    width: 110%;
+    height: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 /* End CSS / style for midInfo*/
 
 /* Start CSS / style for playerOne */
 
 #playerOne {
+    position: absolute;
     width: 40%;
-    float: left;
+    left: 1%;
+    top: 2%;
     border-style: solid hidden;
     border-width: 5px;
     border-color: rgb(116, 232, 242);
@@ -74,7 +115,7 @@ body {
 
 #playController1 {
     display: table;
-    margin: 10px auto;
+    margin: 5px auto;
     background: rgba(116, 232, 242, 0.5);
     border-width: 4px;
     border-style: solid;
@@ -83,6 +124,136 @@ body {
 }
 
 #playController1:hover {
+    background: rgba(116, 232, 242, 0.7);
+}
+
+#songButtons1{
+    display: table;
+    margin: auto;
+}
+
+#song1_1{
+    display: inline-table;
+    margin: 5px auto;
+    margin-left: 2px;
+    background: rgba(116, 232, 242, 0.5);
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(116, 232, 242, 0.9);
+    border-radius: 10px;
+}
+
+#song1_1:hover {
+    background: rgba(116, 232, 242, 0.7);
+}
+
+#song2_1{
+    display: inline-table;
+    margin: 5px auto;
+    margin-left: 2px;
+    background: rgba(116, 232, 242, 0.5);
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(116, 232, 242, 0.9);
+    border-radius: 10px;
+}
+
+#song2_1:hover {
+    background: rgba(116, 232, 242, 0.7);
+}
+
+#song3_1{
+    display: inline-table;
+    margin: 5px auto;
+    margin-left: 2px;
+    background: rgba(116, 232, 242, 0.5);
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(116, 232, 242, 0.9);
+    border-radius: 10px;
+}
+
+#song3_1:hover {
+    background: rgba(116, 232, 242, 0.7);
+}
+
+#song4_1{
+    display: inline-table;
+    margin: 5px auto;
+    margin-left: 2px;
+    background: rgba(116, 232, 242, 0.5);
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(116, 232, 242, 0.9);
+    border-radius: 10px;
+}
+
+#song4_1:hover {
+    background: rgba(116, 232, 242, 0.7);
+}
+
+#playSpeedButtons1 {
+    display: table;
+    margin: auto;
+}
+
+#playSpeed_x0_5_1 {
+    display: inline-table;
+    margin: auto;
+    margin-left: 2px;
+    background: rgba(116, 232, 242, 0.5);
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(116, 232, 242, 0.9);
+    border-radius: 10px; 
+}
+
+#playSpeed_x0_5_1:hover {
+    background: rgba(116, 232, 242, 0.7);
+}
+
+#playSpeed_x1_0_1 {
+    display: inline-table;
+    margin: auto;
+    margin-left: 2px;
+    background: rgba(116, 232, 242, 0.5);
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(116, 232, 242, 0.9);
+    border-radius: 10px; 
+}
+
+#playSpeed_x1_0_1:hover {
+    background: rgba(116, 232, 242, 0.7);
+}
+
+#playSpeed_x1_5_1 {
+    display: inline-table;
+    margin: auto;
+    margin-left: 2px;
+    background: rgba(116, 232, 242, 0.5);
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(116, 232, 242, 0.9);
+    border-radius: 10px; 
+}
+
+#playSpeed_x1_5_1:hover {
+    background: rgba(116, 232, 242, 0.7);
+}
+
+#playSpeed_x2_0_1 {
+    display: inline-table;
+    margin: auto;
+    margin-left: 2px;
+    background: rgba(116, 232, 242, 0.5);
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(116, 232, 242, 0.9);
+    border-radius: 10px; 
+}
+
+#playSpeed_x2_0_1:hover {
     background: rgba(116, 232, 242, 0.7);
 }
 
@@ -163,7 +334,7 @@ body {
     
 }
 
-#sliderText1 {
+.sliderText1 {
     text-align: center;
 }
 
@@ -181,8 +352,10 @@ body {
 /* Start CSS / style for PlayerTwo */
 
 #playerTwo {
+    position: absolute;
     width: 40%;
-    float: right;
+    right: 1%;
+    top: 2%;
     border-style: solid hidden;
     border-width: 5px;
     border-color: rgb(251, 0, 255);
@@ -214,7 +387,7 @@ body {
 
 #playController2 {
     display: table;
-    margin: 10px auto;
+    margin: 5px auto;
     background: rgba(251, 0, 255, 0.5);
     border-width: 4px;
     border-style: solid;
@@ -223,6 +396,136 @@ body {
 }
 
 #playController2:hover {
+    background: rgba(251, 0, 255, 0.7);
+}
+
+#songButtons2{
+    display: table;
+    margin: auto;
+}
+
+#song1_2{
+    display: inline-table;
+    margin: 5px auto;
+    margin-left: 2px;
+    background: rgba(251, 0, 255, 0.5);
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(251, 0, 255, 0.9);
+    border-radius: 10px;
+}
+
+#song1_2:hover {
+    background: rgba(251, 0, 255, 0.7);
+}
+
+#song2_2{
+    display: inline-table;
+    margin: 5px auto;
+    margin-left: 2px;
+    background: rgba(251, 0, 255, 0.5);
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(251, 0, 255, 0.9);
+    border-radius: 10px;
+}
+
+#song2_2:hover {
+    background: rgba(251, 0, 255, 0.7);
+}
+
+#song3_2{
+    display: inline-table;
+    margin: 5px auto;
+    margin-left: 2px;
+    background: rgba(251, 0, 255, 0.5);
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(251, 0, 255, 0.9);
+    border-radius: 10px;
+}
+
+#song3_2:hover {
+    background: rgba(251, 0, 255, 0.7);
+}
+
+#song4_2{
+    display: inline-table;
+    margin: 5px auto;
+    margin-left: 2px;
+    background: rgba(251, 0, 255, 0.5);
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(251, 0, 255, 0.9);
+    border-radius: 10px;
+}
+
+#song4_2:hover {
+    background: rgba(251, 0, 255, 0.7);
+}
+
+#playSpeedButtons2 {
+    display: table;
+    margin: auto;
+}
+
+#playSpeed_x0_5_2 {
+    display: inline-table;
+    margin: auto;
+    margin-left: 2px;
+    background: rgba(251, 0, 255, 0.5);
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(251, 0, 255, 0.9);
+    border-radius: 10px; 
+}
+
+#playSpeed_x0_5_2:hover {
+    background: rgba(251, 0, 255, 0.7);
+}
+
+#playSpeed_x1_0_2 {
+    display: inline-table;
+    margin: auto;
+    margin-left: 2px;
+    background: rgba(251, 0, 255, 0.5);
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(251, 0, 255, 0.9);
+    border-radius: 10px; 
+}
+
+#playSpeed_x1_0_2:hover {
+    background: rgba(251, 0, 255, 0.7);
+}
+
+#playSpeed_x1_5_2 {
+    display: inline-table;
+    margin: auto;
+    margin-left: 2px;
+    background: rgba(251, 0, 255, 0.5);
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(251, 0, 255, 0.9);
+    border-radius: 10px; 
+}
+
+#playSpeed_x1_5_2:hover {
+    background: rgba(251, 0, 255, 0.7);
+}
+
+#playSpeed_x2_0_2 {
+    display: inline-table;
+    margin: auto;
+    margin-left: 2px;
+    background: rgba(251, 0, 255, 0.5);
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(251, 0, 255, 0.9);
+    border-radius: 10px; 
+}
+
+#playSpeed_x2_0_2:hover {
     background: rgba(251, 0, 255, 0.7);
 }
 

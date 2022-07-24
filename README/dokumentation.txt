@@ -1,0 +1,112 @@
+MusicPlayerPlus
+Author: Christian Vollenweider
+MM Audio- und Videotechnik SoSe 2022
+
+1. Dokumentation des sourcecodes
+    1.1 index.html
+    1.2 style.css
+    1.3 index.js
+    1.4 audioPlayer.js
+2. Anleitung
+    2.1 Installationsanleitung
+    2.2 Benutzeranleitung
+    2.3 Technische Projektbeschreibung und Nennung verwendeter Technologien 
+3. Beschreibung der Mockups
+4. Github
+
+
+1. Dokumentation des sourcecodes
+    1.1 index.html
+        - Aufbau des Projekts
+        - siehe Kommentare in index.html
+    1.2 style.css
+        - Gestaltung des Projekts
+    1.3 index.js
+        - Verbindet HTML Elemente mit js script
+        - siehe Kommentare in index.js
+    1.4 audioPlayer
+        - Script für steuerung der Audio / Volume, Bass, etc.
+        - siehe Kommentare in audioPlayer.js
+
+2. Anleitung
+    2.1 Installationsanleitung
+        a) Runterladen aus "https://github.com/Chrisvwd/MusicPlayerPlus"
+        b) Zip Entpacken
+        c) Projekt in z.B. Visual Studio Code öffnen und mit npm start ausführen 
+           (es wurde nur vanilla JS verwenden es müssen keine weiteren npm pakete runtergeladen werden)
+
+    2.2 Benutzeranleitung
+        a) Abspielen und Stoppen eines Songs
+           Zum Abspielen der Audio auf den "Play" Button drücken, welcher sich im linken und im rechten Fenster 
+           unter dem Schallplatten Bild befindet. Es können auch beide "Play" Buttons angeklickt werden, wodurch beide Audioplayer separat
+           einen Song abspielen. 
+           Der "Play" Button wird zu einem "Pause" Button während die Audio abgespielt wird. 
+           Drückt man auf den "Pause" Button, so wird die Audiowiedergabe gestoppt.
+
+        b) Lautstärke der Wiedergabe verändern
+           Die Lautstärke lässt sich mit dem "Volume" Slider verändern, welcher sich unter dem "Play" Button befindet. 
+           Je weiter der slider nach oben geschoben wird, desto lauter wird der abgespielte Song.
+           Je weiter der slider nach unten geschoben wird, desto leiser wird der abgespielte Song.
+
+        c) Equalizer / Bass Mid und Treble anpassen
+           Rechts vom "Volume" Slider befinden sich auf beiden Audioplayern 3 weiter Slider.
+           Ein "Bass" Slider ein "Mid" Slider und ein "Treble" Slider, mit welchem die jeweiligen werte verstärkt bzw. abgeschwächt werden können.
+           Bei dem "Bass" Slider gilt, 
+              je weiter der Slider nach unten geschoben wird, desto stärker werden die Tiefen(der Bass) im abgespielten Song.
+            Der "Mid" Slider verstärkt den Bass oder den Treble Slider, je nachdem ob er nach oben oder nach unten geschoben wird.
+              Wird der Slider nach unten geschoben so wird der bass verstärkt, wird der Slider nach oben verschoben, so wird
+              der Treble verstärkt.
+           Bei dem "Treble" Slider gilt, 
+              je weiter der Slider nach unten geschoben wird, desto stärker werden die Höhen(der Treble) im abgespielten Song.
+
+          d) Tutorial auf der Seite 
+           In der Mitte der Seite, unter dem Titel "MusicPlayerPlus" gibt es einen "Help" Button
+           Hier sollte ein Bild eingeblendet werden, in welchem alle Objekte auf der Seite sehr kurz erklärt werden
+        
+          e) Song Ändern
+          Unter dem "Play" Button befindet sich ein "Song1" und ein "Song2" Button. 
+          Beim drücken einer dieser Buttons wird der abgespielte Song gewechselt.
+
+        Die folgenden Funktionen waren Geplant, konnten aus jedoch aus unterschiedlichen Gründen nicht implementiert werden.
+      
+        f) Wiedergabegeschwindigkeit anpassen
+           Unter dem Play Button befinden sich 4 weiter Button, mit welcher sich die Abspielgeschwindigkeit verändern lässt
+           mit "x0.5" wird der Song nur noch halb so schnell abgespielt werden.
+           mit "x1.0" wird der Song mit normaler geschwindigkeit abgespielt.
+           mit "x1.5" wird der Song etwas schneller abgespielt.
+           mit "x2.0" wird der Song doppelt so schnell abgespielt.
+        
+        g) Song hochladen
+           Per Drag und Drop auf das Schallplatten Bild sollte der Song hochgeladen werden
+           Der Name sollte dann über der Schallplatte angezeigt werden und auf der Schallplatte soll das Cover der audio file
+           angezeigt werden.
+
+        h) Visualizer
+           Unter den 4 Slidern 
+           Ist eine Visualisierung der Audiodaten zu sehen.
+        
+        i) Presets für den Equalizer / Eigene Effekte 
+           unter beiden Audio Playern sollte eine Art drop down menü sichtbar sein.
+           Drückt man auf den Button, so öffnet sich ein kleines fenster mit Presets zum Equalizer
+           oder mit eigenen Effekten für den Song, wie zum Beispiel ein Hall Effekt.
+
+    2.3 Technische Projektbeschreibung und Nennung verwendeter Technologien 
+        Das Projekt besteht aus einem HTML part, einem CSS part und einem Javascript part.
+        Wobei HTML für die Elemente auf der Website verwendet worden ist, CSS für die gestaltung dieser Elemente und
+        Javascript für Funktionen dieser Elemente und weitere Backend Funktionen eingesetzt worden ist.
+        Es wurden keine Frameworks eingesetzt und es wurde nur mit dem standard Javascript und der Web Audio Api gearbeitet.
+
+3. Beschreibung der Mockups
+    Siehe
+    Mockup 1: README\MusicPlayerPlus_proto1_beschreibung.png
+    Mockup 2: README\MusicPlayerPlus_proto2_beschreibung.png
+    Mockup 3 / Finale Version: README\MusicPlayerPlus_proto3_final_beschreibung.png 
+
+4. Github
+    Ich habe versucht nach jeder relevanten änderung einen commit zu machen und wenn es funktioniert dann auch in die main zu pushen.
+    Es wäre besser wenn ich mit branches gearbeitet hätte, jedoch hat es sich fuer mich in diesem Projekt als wenig sinnvoll erwiesen, 
+    wegen der art und weise wie ich an diesem Projekt gearbeitet habe.
+    Sonst würden die branches so benannt werden: feature/featurename/cv für Christian Vollenweider.
+    Link zum Github Repo: https://github.com/Chrisvwd/MusicPlayerPlus
+           
+
